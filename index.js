@@ -4,14 +4,16 @@ const app = express();
 const port = process.env.PORT || 3000;
 const bodyParser = require("body-parser");
 const axios = require("axios");
+require('dotenv').config(); // Load environment variables from .env file
 
 // Your GitHub personal access token
-const githubToken = "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";
+const githubToken = process.env.GITHUB_TOKEN;
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: true }));
+
 app.get("/npm-package-info/:packageName", async (req, res) => {
   try {
     const packageName = req.params.packageName;
@@ -36,6 +38,7 @@ app.get("/npm-package-info/:packageName", async (req, res) => {
     res.render("npm-package-info", { npmPackage: null });
   }
 });
+
 app.get("/", async (req, res) => {
   try {
     // Fetch information about the DISBD package from NPM
@@ -85,8 +88,6 @@ app.get("/", async (req, res) => {
     res.render("index", { npmPackage: null, repositories: [] });
   }
 });
-
-
 
 app.listen(port, () => {
   console.log(`Dev Web Başlatıldı 🍎 - Listening on port ${port}`);
