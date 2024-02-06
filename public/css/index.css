@@ -343,7 +343,7 @@ ul {
     }
 }
 
-.pop{
+.pop {
     height: 35px;
     width: auto;
     padding-left: 10px;
@@ -352,9 +352,7 @@ ul {
     padding-bottom: 2.5px;
 
     padding-right: 10px;
-color: rgb(59 130 246);
+    color: rgb(59 130 246);
     border: 1px solid rgb(59 130 246);
     border-radius: 50px;
 }
-
-
