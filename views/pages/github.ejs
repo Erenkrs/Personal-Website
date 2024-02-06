@@ -23,13 +23,8 @@
                             <%= repo.name %>
                         </div>
                         <div class="list-orta">
-                            <% const description=repo.description;const maxLength=35;if (description.length>
-                                maxLength) { %>
-                                <%= description.slice(0, maxLength) %>
-                                    ...
-                                    <% } else { %>
-                                        <%= description %>
-                                            <% } %>
+                            <%= repo.description %>
+
                         </div>
                     </div>
                     <div class="list-alt">
