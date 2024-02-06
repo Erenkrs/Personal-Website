@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+    <center>
+        <nav>
+            <div class="navpp">
+                <div class="pp-logo">
+                    <img class="logo" src="/img/logo.gif" alt="">
+                </div>
+                <div class="textver">
+                    <div class="pptext">
+                        Eren
+                    </div>
+                    <div class="ppversion">
+                        v1.0.0
+                    </div>
+                </div>
+            </div>
+            <div class="btn-div pc">
+                <a class="btn" href="/">Home</a>
+                <a class="btn" href="/">Projects</a>
+                <a class="btn" href="/">Contact</a>
+            </div>
+    
+            <div class="btn-div mobile" id="mobile">
+                <a class="btn" href="/"><i class="fa-regular fa-house"></i></a>
+                <a class="btn" href="/"><i class="fa-regular fa-diagram-project"></i></a>
+                <a class="btn" href="/"><i class="fa-regular fa-message-middle"></i></a>
+            </div>
+    
+            <div class="social-dv">
+                <a class="soc-btn" href="/"><i class="fa-brands fa-github"></i></a>
+                <a class="soc-btn" href="/"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </nav>
+    </center>
+   
+</body>
+    <script>
+        window.addEventListener('scroll', function () {
+          var nav = document.querySelector('nav');
+          var scrollPosition = window.scrollY;
+      
+          var threshold = 50;
+      
+          if (scrollPosition > threshold) {
+            nav.classList.add('scrolled');
+          } else {
+            nav.classList.remove('scrolled'); 
+          }
+        });
+      </script>
+      
+</html>
