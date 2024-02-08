@@ -228,7 +228,6 @@ nav.scrolled {
         margin-right: 0px;
         right: 0px;
         left: auto;
-        margin-left: 40px;
         font-size: 15.7px;
     }
 
@@ -241,8 +240,9 @@ nav.scrolled {
         border-radius: 50%;
     }
 
-    .soc-btn {
+    .textver{
         display: none;
     }
 
 }
+
