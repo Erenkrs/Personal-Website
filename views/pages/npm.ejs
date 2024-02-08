@@ -1,81 +1,74 @@
 <div class="github">
-    <h1 id="bsl" class="bsl"> <svg stroke="currentColor" fill="currentColor" stroke-width="0"
-            viewBox="0 0 24 24" class="mr-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M22 8a.76.76 0 0 0 0-.21v-.08a.77.77 0 0 0-.07-.16.35.35 0 0 0-.05-.08l-.1-.13-.08-.06-.12-.09-9-5a1 1 0 0 0-1 0l-9 5-.09.07-.11.08a.41.41 0 0 0-.07.11.39.39 0 0 0-.08.1.59.59 0 0 0-.06.14.3.3 0 0 0 0 .1A.76.76 0 0 0 2 8v8a1 1 0 0 0 .52.87l9 5a.75.75 0 0 0 .13.06h.1a1.06 1.06 0 0 0 .5 0h.1l.14-.06 9-5A1 1 0 0 0 22 16V8zm-10 3.87L5.06 8l2.76-1.52 6.83 3.9zm0-7.72L18.94 8 16.7 9.25 9.87 5.34zM4 9.7l7 3.92v5.68l-7-3.89zm9 9.6v-5.68l3-1.68V15l2-1v-3.18l2-1.11v5.7z">
+  <h1 id="bsl" class="bsl"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="mr-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22 8a.76.76 0 0 0 0-.21v-.08a.77.77 0 0 0-.07-.16.35.35 0 0 0-.05-.08l-.1-.13-.08-.06-.12-.09-9-5a1 1 0 0 0-1 0l-9 5-.09.07-.11.08a.41.41 0 0 0-.07.11.39.39 0 0 0-.08.1.59.59 0 0 0-.06.14.3.3 0 0 0 0 .1A.76.76 0 0 0 2 8v8a1 1 0 0 0 .52.87l9 5a.75.75 0 0 0 .13.06h.1a1.06 1.06 0 0 0 .5 0h.1l.14-.06 9-5A1 1 0 0 0 22 16V8zm-10 3.87L5.06 8l2.76-1.52 6.83 3.9zm0-7.72L18.94 8 16.7 9.25 9.87 5.34zM4 9.7l7 3.92v5.68l-7-3.89zm9 9.6v-5.68l3-1.68V15l2-1v-3.18l2-1.11v5.7z">
+      </path>
+    </svg>
+    <span>NPM</span>
+    Packages
+  </h1>
+  <p class="ack">I have developed many packages, you can find them all here.
+
+
+
+
+
+  </p>
+  <ul class="ul">
+    <% if (npmPackage) { %>
+    <li class="list">
+      <div class="top">
+        <div class="list-top"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 16 16" class="mr-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0v16h16v-16h-16zM13 13h-2v-8h-3v8h-5v-10h10v10z">
             </path>
-        </svg>
-        <span>NPM</span>
-        Packages
-    </h1>
-    <p class="ack">I have developed many packages, you can find them all here.
+          </svg>
+          <%= npmPackage.name %>
+        </div>
+        <div class="list-orta">
+          <% const description = npmPackage.description;
+const maxLength = 45;
+if (description.length >
+maxLength) { %>
+          <%= description.slice(0, maxLength) %>...
+          <% } else { %>
+          <%= description %>
+
+          <% } %>
+        </div>
+      </div>
+      <div class="list-alt">
+        <div class="left">
+          <%= npmPackage.license %>
+        </div>
+        <div class="right">
+          <p class="items"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-rose-400 mr-1" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z">
+              </path>
+            </svg> <span>
+              <%= npmPackage.downloads || 'Not available' %>
+            </span> </p>
+          <p class="items"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 mr-1" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none">
+              </path>
+              <path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5">
+              </path>
+              <path d="M12 12l8 -4.5"></path>
+              <path d="M12 12l0 9"></path>
+              <path d="M12 12l-8 -4.5"></path>
+              <path d="M16 5.25l-8 4.5"></path>
+            </svg> <span>22</span> </p>
+          <p class="items"><svg id="cc" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-600 mr-1" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.5,19 C17.8807119,19 19,17.8807119 19,16.5 C19,15.1192881 17.8807119,14 16.5,14 C15.1192881,14 14,15.1192881 14,16.5 C14,17.8807119 15.1192881,19 16.5,19 Z M10,5 L12,3 M7.5,10 C8.88071187,10 10,8.88071187 10,7.5 C10,6.11928813 8.88071187,5 7.5,5 C6.11928813,5 5,6.11928813 5,7.5 C5,8.88071187 6.11928813,10 7.5,10 Z M8,16 L16,8 M5.5,21 C6.88071187,21 8,19.8807119 8,18.5 C8,17.1192881 6.88071187,16 5.5,16 C4.11928813,16 3,17.1192881 3,18.5 C3,19.8807119 4.11928813,21 5.5,21 Z M18.5,8 C19.8807119,8 21,6.88071187 21,5.5 C21,4.11928813 19.8807119,3 18.5,3 C17.1192881,3 16,4.11928813 16,5.5 C16,6.88071187 17.1192881,8 18.5,8 Z M12,21 L14,19">
+              </path>
+            </svg> <span>
+              <%= npmPackage.version %>
+            </span> </p>
+
+        </div>
+      </div>
+    </li>
 
 
-
-
-
-    </p>
-    <ul class="ul">
-
-        <% if (npmPackage) { %>
-            <li class="list">
-                <div class="top">
-                    <div class="list-top"> <svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                            version="1.1" viewBox="0 0 16 16" class="mr-2" height="1em" width="1em"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0v16h16v-16h-16zM13 13h-2v-8h-3v8h-5v-10h10v10z"></path>
-                        </svg>
-                        <%= npmPackage.name %>
-
-                    </div>
-                    <div class="list-orta">
-                        <% const description=npmPackage.description ;const maxLength=45;if (description.length>
-                            maxLength) { %>
-                            <%= description.slice(0, maxLength) %>
-                                ...
-                                <% } else { %>
-                                    <%= description %>
-                                        <% } %>
-                    </div>
-                </div>
-                <div class="list-alt">
-                    <div class="left">
-                        <%= npmPackage.license %>
-                    </div>
-                    <div class="right">
-                        <p class="items"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                                viewBox="0 0 24 24" class="text-rose-400 mr-1" height="1em" width="1em"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill="none" d="M0 0h24v24H0z"></path>
-                                <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
-                            </svg> <span>
-                                <%= npmPackage.downloads || 'Not available' %>
-                            </span> </p>
-                        <p class="items"><svg stroke="currentColor" fill="none" stroke-width="2"
-                                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
-                                class="text-gray-500 mr-1" height="1em" width="1em"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5"></path>
-                                <path d="M12 12l8 -4.5"></path>
-                                <path d="M12 12l0 9"></path>
-                                <path d="M12 12l-8 -4.5"></path>
-                                <path d="M16 5.25l-8 4.5"></path>
-                            </svg> <span>22</span> </p>
-                        <p class="items"><svg id="cc" stroke="currentColor" fill="currentColor" stroke-width="0"
-                                viewBox="0 0 24 24" class="text-gray-600 mr-1" height="1em" width="1em"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M16.5,19 C17.8807119,19 19,17.8807119 19,16.5 C19,15.1192881 17.8807119,14 16.5,14 C15.1192881,14 14,15.1192881 14,16.5 C14,17.8807119 15.1192881,19 16.5,19 Z M10,5 L12,3 M7.5,10 C8.88071187,10 10,8.88071187 10,7.5 C10,6.11928813 8.88071187,5 7.5,5 C6.11928813,5 5,6.11928813 5,7.5 C5,8.88071187 6.11928813,10 7.5,10 Z M8,16 L16,8 M5.5,21 C6.88071187,21 8,19.8807119 8,18.5 C8,17.1192881 6.88071187,16 5.5,16 C4.11928813,16 3,17.1192881 3,18.5 C3,19.8807119 4.11928813,21 5.5,21 Z M18.5,8 C19.8807119,8 21,6.88071187 21,5.5 C21,4.11928813 19.8807119,3 18.5,3 C17.1192881,3 16,4.11928813 16,5.5 C16,6.88071187 17.1192881,8 18.5,8 Z M12,21 L14,19">
-                                </path>
-                            </svg> <span>
-                                <%= npmPackage.version %>
-                            </span> </p>
-
-                    </div>
-                </div>
-            </li>
-            <% } %>
-    </ul>
+    <% } %>
+  </ul>
 </div>
