@@ -1,0 +1,157 @@
+body.dark {
+    background-color: #0d1b2a;
+}
+
+.btn.dark {
+    color: #E0E1DD;
+    transition: none;
+}
+
+.pptext.dark {
+    color: #E0E1DD;
+}
+
+.ppversion.dark {
+    color: #E0E1DD;
+}
+
+.btn.dark:hover {
+    background-color: #2c3c5a;
+}
+
+.soc-btn.dark {
+    background-color: #1B263B;
+    color: #8d97a4;
+}
+
+.soc-btn.dark:hover {
+    background-color: #202d46;
+    color: #727a85;
+}
+
+nav.dark.scrolled {
+    background-color: #415a7769;
+    margin-top: 15px;
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease, margin-top 0.2s ease;
+}
+
+
+.text.dark {
+    color: #dadada;
+}
+
+.text2.dark {
+    color: #dadada;
+}
+
+.text3.dark {
+    color: #dadada;
+}
+
+
+.list.dark {
+    background-color: #1B263B;
+    border: 1px solid rgb(31, 43, 65);
+}
+
+.list.dark:hover {
+    background-color: #212d44;
+    border: 1px solid rgb(31, 43, 65);
+}
+
+.tech.dark {
+    background-color: #1B263B;
+    border: 1px solid rgb(31, 43, 65);
+}
+
+.tech.dark:hover {
+    background-color: #212d44;
+    border: 1px solid rgb(31, 43, 65);
+}
+
+.list-top.dark {
+    color: #cfcfcd;
+}
+
+.list-orta.dark {
+    color: #dadada;
+}
+
+.list-alt.dark {
+    color: #dadada;
+}
+
+.bsl.dark {
+    color: #dadada;
+}
+
+.ack.dark {
+    color: #bfbfbf;
+}
+
+.t-p.dark {
+    color: #dadada;
+
+}
+
+.f-o.dark {
+    color: #dadada6e;
+}
+
+.develpoer.dark {
+    color: #e7e5e56e;
+}
+
+.time.dark {
+    color: #e7e5e56e;
+
+}
+
+.my.dark {
+    color: #dadada;
+}
+
+.desc.dark {
+    color: #bebebe;
+}
+
+.kutu.dark {
+    border: 1px solid rgb(31, 43, 65);
+    background-color: #1B263B;
+}
+
+.kutu.dark:hover {
+    background-color: #212d44;
+    border: 1px solid rgb(31, 43, 65);
+}
+
+.kutu-img.dark {
+    background-color: #212d44;
+
+}
+
+.kutu-bs.dark {
+    color: #b9b9b9;
+}
+
+.kutu-ac.dark {
+    color: #a7a7a7;
+}
+
+.url-text.dark a {
+    color: #999999;
+}
+
+#darkModeButton {
+    border: none;
+    cursor: pointer;
+}
+
+.fa-sun {
+    color: #efa640;
+}
+
+.fa-moon {
+    color: #9A9C9E;
+}
