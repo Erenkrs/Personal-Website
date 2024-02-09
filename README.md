@@ -10,13 +10,15 @@ En son Node.js sürümü gereklidir.
 
 ## ÖZELİKLER
 
-```- Temalar Arası Geçiş, Tema Kaydı
+```
+- Temalar Arası Geçiş, Tema Kaydı
 
 - Responsive Tasarım
 
 - Github Ve Npm.js Entegreli
 
-- Sürekli Yenilik```
+- Sürekli Yenilik
+```
 
 ## Örnek Site
 
