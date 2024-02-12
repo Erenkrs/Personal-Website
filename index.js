@@ -34,7 +34,7 @@ app.get("/", async (req, res) => {
       downloads: downloads
     };
 
-    const githubUsername = "k-eren-k";
+    const githubUsername = "Erenkrs";
     const githubHeaders = {
       Authorization: `Bearer ${githubToken}`
     };
