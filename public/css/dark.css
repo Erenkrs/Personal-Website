@@ -2,6 +2,16 @@ body.dark {
     background-color: #0d1b2a;
 }
 
+.modal-content.dark {
+    padding-bottom: -6px;
+    margin: 15% auto;
+    border-radius: 15px;
+    padding: 15px;
+    width: 248px;
+    border: 1px solid #0d1b2a;
+    background-color: #0d1b2a;
+}
+
 .btn.dark {
     color: #E0E1DD;
     transition: none;
@@ -16,6 +26,7 @@ body.dark {
 }
 
 .btn.dark:hover {
+    transition: all 0.2s ease;
     background-color: #2c3c5a;
 }
 

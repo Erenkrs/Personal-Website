@@ -32,9 +32,10 @@ app.get("/", async (req, res) => {
       license: packageInfo.license,
       dependencies: packageInfo.versions[packageInfo["dist-tags"].latest].dependencies || [],
       downloads: downloads
+
     };
 
-    const githubUsername = "k-eren-k";
+    const githubUsername = "Erenkrs";
     const githubHeaders = {
       Authorization: `Bearer ${githubToken}`
     };
@@ -49,6 +50,7 @@ app.get("/", async (req, res) => {
         language: repo.language,
         stargazers_count: repo.stargazers_count,
         forks_count: repo.forks_count,
+        url: repo.html_url,
         description: repo.description
       };
     });
@@ -65,5 +67,5 @@ app.get("/projects", async (req, res) => {
 
 });
 app.listen(port, () => {
-  console.log(`Dev Web Başlatıldı 🍎 - Listening on port ${port}`);
+  console.log(`.${port}`);
 });

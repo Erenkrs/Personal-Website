@@ -90,6 +90,7 @@ ul {
     height: 160px;
     margin: 10px;
     padding: 25px 25px;
+    text-decoration: none;
     background-color: rgba(229, 231, 235, 0.7);
     border: 1px solid #D4D6D9;
     width: calc(33.33% - 20px);
@@ -108,6 +109,7 @@ ul {
 
 .list-orta {
     font-size: 13px;
+    color: #282828;
     margin-bottom: auto;
 }
 
@@ -118,6 +120,7 @@ ul {
     display: flex;
     font-size: 14px;
     justify-content: left;
+    color: #282828;
     margin-top: auto;
 }
 
